@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Add Product</title>
+</head>
+<body>
+	<header>
+				<a style="margin-left:20px" href="/mh1">Điểm danh bắt đầu/kết thúc làm</a>
+				<a style="margin-left:60px" href="/mh2">Xem thông tin cá nhân</a>
+				<a style="margin-left:60px" href="/mh3">thông tin giờ làm lương tháng</a>
+				<a style="margin-left:60px" href="/mh4">thông tin Covid cá nhân</a>
+				<a style="margin-left:60px" href="/mh5">xác nhận thông tin giờ làm</a>
+				<a style="margin-left:60px" href="/mh6">đăng nhập/đăng xuất</a>
+	</header>
+
+	<main>
+	<br>
+		<h3>thông tin covid cá nhân</h3>
+		<nav>
+			<ul>
+				<li><p id="thannhiet">Đăng ký thông tin thân nhiệt: 15/08/2023</p></li>
+				<li><p id="tiem">Đăng ký thông tin tiêm vaccine: alpha và beta</p></li>
+				<li><p id="covid">Đăng ký thông tin dương tính với covid: âm tính</p></li>
+			</ul>
+			<br>
+			<br>
+			<button onclick="xuatfile" style="margin-left: 50px"><a href="/mhxtt">xuất thông tin</a></button>
+		</nav>
+<script>
+const dataperson4 = {
+"dkthanhiet": "15/8/2023", 
+"dktiem":"Nha",
+"muimot":"alpha",
+"muihai":"beta",
+"covid":"âm tính"
+}
+
+
+var d = new Date();
+nhiet = document.getElementById("thannhiet");
+nhiet.innerHTML = "Đăng ký thông tin thân nhiệt: ngày " + d.getDate() + "/" + (d.getMonth()+1) + "/" + d.getFullYear(); 
+
+
+</script>
+	</main>
+</body>
+</html>
+
+
+

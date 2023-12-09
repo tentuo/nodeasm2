@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Add Product</title>
+</head>
+<body>
+	<header>
+				<a style="margin-left:20px" href="/mh1">Điểm danh bắt đầu/kết thúc làm</a>
+				<a style="margin-left:60px" href="/mh2">Xem thông tin cá nhân</a>
+				<a style="margin-left:60px" href="/mh3">thông tin giờ làm lương tháng</a>
+				<a style="margin-left:60px" href="/mh4">thông tin Covid cá nhân</a>
+				<a style="margin-left:60px" href="/mh6">đăng nhập</a>
+	</header>
+
+	<main>
+		<div class="dangnhap" style="margin-left:440px; margin-top: 170px;">
+			<h3 style="margin-left:20px;">thông tin truy cập </h3>
+			<div>
+				<label>tên đăng nhập: </label> <input type="text" id="tendn" style="margin-left:10px;" />
+				<br>
+				<br>
+				<label>mật khẩu: </label> <input type="password" id="mk" style="margin-left:40px;" />
+				<br>
+				<br>
+				<button onClick="andangnhap()" style="margin-left:200px;"> Đăng nhập </button>
+			</div>
+		</div>
+
+<script>
+function andangnhap() {
+	ten = document.getElementById("tendn").value;
+	mk = document.getElementById("mk").value;
+	if(ten == "admin" && mk == "admin") {
+		alert("đăng nhập thành công");
+		location.href = "http://localhost:3000/";
+		//khac voi, da qua kiem tra xac thuc website: location.href = "https://localhost:3000/";
+	}else{
+		alert("thông tin không đúng, hãy nhập lại");
+		location.href = "http://localhost:3000/mh6";
+	}	
+}
+</script>
+	</main>
+</body>
+</html>
+
+
+

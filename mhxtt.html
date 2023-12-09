@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang=en>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Add Product</title>
+</head>
+<body>
+
+	<main>
+	<br>
+	<br>
+		<h3>thông tin covid cá nhân</h3>
+		<nav>
+			<ul>
+				<li><p id="thannhiet">Đăng ký thông tin thân nhiệt: </p></li>
+				<li><p id="tiem">Đăng ký thông tin tiêm vaccine: </p></li>
+				<li><p id="covid">Đăng ký thông tin dương tính với covid: </p></li>
+			</ul>
+			<br>
+			<br>
+			<br>
+<!--			<button ><a href="/mh4">quay lại</a></button>
+				<button onclick="inluuthongtin">lưu thông tin</a></button>
+-->
+		</nav>
+<script>
+const dataperson4 = {
+"dkthanhiet": "17/8/2023", 
+"dktiem":"Nha",
+"muimot":"alpha",
+"muihai":"beta",
+"covid":"âm tính"
+}
+
+var d = new Date();
+nhiet = document.getElementById("thannhiet");
+nhiet.innerHTML = "Đăng ký thông tin thân nhiệt: Ngày " + dataperson4.dkthanhiet;
+//nhiet.innerHTML = "Đăng ký thông tin thân nhiệt: ngày " + d.getDate() + "/" + (d.getMonth()+1) + "/" + d.getFullYear(); 
+
+_tiem = document.getElementById("tiem");
+_tiem.innerHTML = "Đăng ký thông tin tiêm vaccine: " + dataperson4.muimot + " và " + dataperson4.muihai;
+
+_covid = document.getElementById("covid");
+_covid.innerHTML = "Đăng ký thông tin dương tính với covid: " + dataperson4.covid;
+
+</script>
+	</main>
+</body>
+</html>
+
+
+
